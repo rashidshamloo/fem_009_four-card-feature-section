@@ -72,7 +72,7 @@ body {
   padding: 1.85rem;
   min-height: 13.875rem;
 }
-.container .card-container .card h3 {
+.container .card-container .card h2 {
   font-size: 1.25rem;
   color: hsl(234deg, 12%, 34%);
 }
