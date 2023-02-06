@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  color: hsl(229deg, 6%, 66%);
+  background-color: hsl(0deg, 0%, 98%);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .heading-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .heading-container > * {
+  text-align: center;
+}
+.container .heading-container h1 {
+  color: hsl(234deg, 12%, 34%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.container .heading-container h1 span:first-child {
+  font-weight: 200;
+}
+.container .heading-container h1 span:last-child {
+  font-weight: 600;
+}
+.container .heading-container p {
+  font-size: 0.94rem;
+  font-weight: 400;
+  margin: 1rem 1.8rem;
+  line-height: 1.5rem;
+}
+.container .card-container {
+  margin-top: 1rem;
+  padding: 1.8rem 1.8rem 0 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.6rem 1rem rgba(76, 78, 97, 0.15);
+  margin: 0.75rem 0;
+  position: relative;
+  overflow: hidden;
+  padding: 1.85rem;
+  min-height: 13.875rem;
+}
+.container .card-container .card h3 {
+  font-size: 1.25rem;
+  color: hsl(234deg, 12%, 34%);
+}
+.container .card-container .card p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-top: 0.35rem;
+}
+.container .card-container .card img {
+  width: 3.5rem;
+  height: 3.5rem;
+  align-self: flex-end;
+  margin-top: auto;
+}
+.container .card-container .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.675%;
+}
+.container .card-container .supervisor-card::after {
+  background-color: hsl(180deg, 62%, 55%);
+}
+.container .card-container .team-card::after {
+  background-color: hsl(0deg, 78%, 62%);
+}
+.container .card-container .karma-card::after {
+  background-color: hsl(34deg, 97%, 64%);
+}
+.container .card-container .calculator-card::after {
+  background-color: hsl(212deg, 86%, 64%);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+footer p {
+  color: hsl(229deg, 6%, 66%);
+  margin-bottom: 0.2rem;
+}
+footer p span:last-child {
+  display: block;
+}
+footer i {
+  font-size: 0.9rem;
+}
+footer a {
+  color: hsl(229deg, 6%, 66%);
+}
+footer a:hover {
+  color: hsl(234deg, 12%, 34%);
+  transition: 700ms;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 3.2vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1140px) {
+  html {
+    font-size: 1.4vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    min-width: 69.375rem;
+    min-height: 36.5rem;
+  }
+  .container .heading-container {
+    width: 31.875rem;
+    margin-top: 0;
+  }
+  .container .heading-container h1 {
+    font-size: 2.3rem;
+  }
+  .container .heading-container p {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .container .card-container {
+    min-height: 35.3rem;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .container .card-container .card {
+    width: 21.875rem;
+    height: 15.625rem;
+    position: absolute;
+  }
+  .container .card-container .card p {
+    margin-top: 0.6rem;
+  }
+  .container .card-container .card img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .container .card-container .card::after {
+    height: 1.6%;
+  }
+  .container .card-container .supervisor-card {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .container .card-container .team-card {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container .card-container .karma-card {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container .card-container .calculator-card {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  footer {
+    margin-bottom: initial;
+    padding: 0.625rem;
+    position: relative;
+    min-width: 8rem;
+    min-height: 3.2rem;
+  }
+  footer p {
+    margin-bottom: 1rem;
+  }
+  footer p span {
+    white-space: nowrap;
+  }
+  footer p span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  footer p span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  footer p span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  footer p span:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=style.css.map */
